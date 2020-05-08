@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Color It!</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Modak&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  
+  <script>
+$(function() {
+    
+    $(".toggle").on("click", function(){
+    if($(".item").hasClass("active")){
+       $(".item").removeClass("active");
+    }
+    else{
+      $(".item").addClass("active");
+      }
+    })
+});
+
+</script>
+
+
+</head>
+
+
+<body>
+<!-- partial:index.partial.html -->
+<body>
+
+
+
+<nav>
+<ul class="menu">
+<li class="logo"><a href="index.html">COLOR IT</a></li>
+<li class="item"><a href="Material.html">Material</a></li>
+<li class="item"><a href="water.html">Water</a></li>
+<li class="item">Making</li>
+
+<li class="toggle"><a  href="#"><span class="bars"></span></a></li>
+</ul>
+</nav>
+
+
+
+
+
+<p class="statement">Boiling the red cabbage with the water you collect.</p>
+
+
+<div class="container">
+  <img class="ig1"src="Red_Cabbage.png">
+  <img class="ig2"src="water bottle.png">
+</div>
+
+<div><a href="learning.html"><img class="ig3"src="pot.png"></a></div>
+
+   
+</body>
+<!-- partial -->
+  
+</body>
+</html>

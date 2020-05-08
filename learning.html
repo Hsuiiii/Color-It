@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Color It!</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Modak&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  
+  <script>
+$(function() {
+    
+    $(".toggle").on("click", function(){
+    if($(".item").hasClass("active")){
+       $(".item").removeClass("active");
+    }
+    else{
+      $(".item").addClass("active");
+      }
+    })
+});
+
+</script>
+
+
+</head>
+
+
+<body>
+<!-- partial:index.partial.html -->
+<body>
+
+
+
+<nav>
+<ul class="menu">
+<li class="logo"><a href="index.html">COLOR IT</a></li>
+<li class="item"><a href="Material.html">Material</a></li>
+<li class="item"><a href="water.html">Water</a></li>
+<li class="item"><a href="making">Making</a></li>
+
+<li class="toggle"><a  href="#"><span class="bars"></span></a></li>
+</ul>
+</nav>
+
+
+
+
+
+<p class="statement">This is what you get!</p>
+
+<div>
+<img class="result" src="result.png"/>
+</div>
+
+<p class="explain"> <span>Purple: Ph 5.5</span> (pure water ph is 7) </p>
+
+<p class="ex">
+The water you collected is from Gowanus Canal, the color shows the PH result for the water quality from this water resource. 
+<br/>
+<br/>
+Despite its relatively short length, the Gowanus Canal was a hub for Brooklyn's maritime and commercial shipping activity. At its busiest, as many as 100 ships a day transported cargo through it. In addition, the industrial sector around the canal grew substantially over time to include stone and coal yards; flour mills; cement works, and manufactured gas plants; tanneries, factories for paint, ink, and soap; machine shops; chemical plants; and sulfur producers. All of these industries emitted substantial water and airborne pollutants.Chemical fertilizers were manufactured along the canal soon after the Civil War.
+Coal processing had been a dominant industry since 1869. By the late 19th century, there were 22 coal plants with frontage on the canal.Coal plants along the upper canal used large amounts of water in the conversion of coal to coke, liquids and gases. Coal gas was soon used for heating, light, and factory power. Coke was used to make steel. Wastewater and coal tar (now known to be a source of carcinogens) were dumped back into the canal. Brooklyn's slaughterhouses dumped blood and other wastes into the canals.
+</p>
+
+<div class="container1">
+<div class="b1"> BUY</div>
+<div class="b1"> SHARE</div>  
+<div class="b1"> BUY</div>   
+</div>
+</body>
+<!-- partial -->
+  
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Color It!</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Modak&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  
+  <script>
+$(function() {
+    
+    $(".toggle").on("click", function(){
+    if($(".item").hasClass("active")){
+       $(".item").removeClass("active");
+    }
+    else{
+      $(".item").addClass("active");
+      }
+    })
+});
+
+</script>
+
+
+</head>
+
+
+<body>
+<!-- partial:index.partial.html -->
+<body>
+
+
+
+<nav>
+  <ul class="menu">
+<li class="logo"><a href="index.html">COLOR IT</a></li>
+<li class="item">Material</li>
+<li class="item">Water</li>
+<li class="item">Making</li>
+
+<li class="toggle"><a  href="#"><span class="bars"></span></a></li>
+</ul>
+</nav>
+
+
+
+
+
+<p class="statement">Find the item that you want to work with.</p>
+
+<div class="container">
+  <a class="it2"href="water.html"><img class="item" src="unisex-tshirt.png"/></a>
+    <a class="it2"href="water.html"><img class="item" src="pngguru.com.png"/> </a>
+    <a class="it2"href="water.html"><img class="item" src="Firewood-Wood-PNG-Photos.png"/></a>
+   <a class="it2"href="water.html"> <img class="item" src="paper.png"/></a>
+</div>
+   
+</body>
+<!-- partial -->
+  
+</body>
+</html>

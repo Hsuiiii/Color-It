@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Color It!</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Modak&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  
+  <script>
+$(function() {
+    
+    $(".toggle").on("click", function(){
+    if($(".item").hasClass("active")){
+       $(".item").removeClass("active");
+    }
+    else{
+      $(".item").addClass("active");
+      }
+    })
+});
+
+</script>
+
+
+</head>
+
+
+<body>
+<!-- partial:index.partial.html -->
+<body>
+
+
+
+<nav>
+<ul class="menu">
+<li class="logo"><a href="index.html">COLOR IT</a></li>
+<li class="item">Material</li>
+<li class="item">Water</li>
+<li class="item">Making</li>
+<li class="item ">Learning</li>
+<li class="toggle"><a  href="#"><span class="bars"></span></a></li>
+</ul>
+</nav>
+
+
+
+<h1>Welcome!</h1>
+
+<p>This website let the user experience the natural dye and finding the secret of the water sources.
+
+<br/>
+If you are ready you can click here to start.
+
+</p>
+
+<a href="Material.html"><div class="start"> START</div></a>
+   
+</body>
+<!-- partial -->
+  
+</body>
+</html>

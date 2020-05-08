@@ -1,0 +1,389 @@
+body {
+  color:black;
+font-family: 'Fira Sans', sans-serif;
+
+}
+
+h1{
+  margin-left:10%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  font-size:80px;
+}
+
+p{
+  margin-left:10%;
+}
+
+div.start{
+  text-align: center;
+  width: 100px;
+  height: auto;
+  padding: 10px 5px;
+  font-size: 30px;
+  border-color: black;
+  border-style: solid;
+  margin-top: 8%;
+  margin-left: 45%;
+
+}
+
+.start:hover{
+  color: burlywood;
+  border-color: burlywood;
+
+}
+
+div.b1{
+  text-align: center;
+  width: 100px;
+  height: auto;
+  padding: 10px 5px;
+  font-size: 30px;
+  border-color: black;
+  border-style: solid;
+  margin-top: 8%;
+  margin-left: 45%;
+
+}
+
+.b1:hover{
+  color: burlywood;
+  border-color: burlywood;
+
+}
+
+p.statement{
+ text-align: center;
+ margin-left:0%;
+ margin-top:3%;
+ font-size: 20px;
+
+}
+
+.container{
+
+  display:flex;
+  flex-flow: row no-wrap;
+  align-items: center;
+  justify-content: center;
+  left:50%;
+
+}
+
+
+.container1{
+
+  display:flex;
+  flex-flow: row no-wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10%;
+
+
+}
+
+
+
+img.item{
+  width:200px;
+  margin:3%;
+  margin-top:10%;
+}
+
+
+.it2{
+
+  margin:3%;
+  margin-top:10%;
+}
+
+.map{
+
+  background-image: url(New-York-City-neighborhoods-blank-linewidth.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;  
+  width: 400px;
+  height: 600px;
+  margin-left: 36%;
+}
+
+.location1{
+  width: 15px;
+  height:15px;
+  background-color: blue;
+  border-radius: 50px;
+  position:relative;
+  top:390px;
+  left:50px;
+}
+
+.location2{
+  width: 15px;
+  height:15px;
+  background-color: blue;
+  border-radius: 50px;
+  position:relative;
+  top:390px;
+  left:70px;
+}
+.location3{
+  width: 15px;
+  height:15px;
+  background-color: blue;
+  border-radius: 50px;
+  position:relative;
+  top:255px;
+  left:100px;
+}
+.location4{
+  width: 15px;
+  height:15px;
+  background-color: blue;
+  border-radius: 50px;
+  position:relative;
+  top:200px;
+  left:70px;
+}
+
+
+
+img.ig1{
+
+  width:100px;
+
+
+}
+
+
+img.ig2{
+
+  width: 160px;
+
+}
+
+
+img.ig3{
+
+width:400px;
+margin-left: 35%;
+
+}
+
+img.result{
+
+width:500px;
+margin-top:5%;
+margin-left: 33%;
+}
+
+.explain{
+ 
+  font-size: 20px;
+  margin-top: 10%;
+
+}
+
+.ex{
+  
+  line-height: 30px;
+  margin-right:10%;
+  text-align: justify;
+  margin-top:5%;
+}
+
+span{
+color:purple;
+font-size: 30px;
+
+}
+
+
+
+
+
+/** menu **/
+
+nav{
+
+padding: 0px 8px;
+border-bottom:1px rgb(199, 193, 193) solid;
+
+}
+
+
+
+ul{
+   list-style-type:none;
+}
+
+a{
+  color:black;
+  text-decoration:none;
+}
+
+a:hover{
+  color:burlywood;
+
+}
+
+.menu li{
+ font-size:16px;
+ padding:15px 5px;
+ font-family: 'Fira Sans', sans-serif, bold;
+ 
+}
+
+.menu li a{
+  display:block;
+}
+
+
+/* Mobile */
+.menu{
+display:flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items:center;
+}
+
+li.logo{
+font-family: 'Modak', cursive;
+
+}
+
+.toggle{
+  order:1;
+}
+
+
+
+.item{
+width:100%;
+color:rgb(129, 126, 126);
+text-align:center;
+order:2;
+display:none;
+}
+
+.item.active{
+display:block;
+}
+
+.toggle{
+cursor:pointer;
+
+}
+
+.bars{
+
+   background:#999;
+   display:inline-block;
+   position:relative;
+   height:2px;
+   width:18px;   
+}
+
+
+.bars::before,.bars::after{
+
+   background:#999;
+   content:"";
+   display: block;
+   height:2px;
+   position: absolute;
+   width:18px;
+   text-align:left;
+}
+
+.bars::before{
+ top:5px;
+
+}
+
+.bars::after{
+ top:-5px;
+
+}
+
+
+
+/*Tablet*/
+@media all and (min-width:460px){
+.menu{
+  justify-content:center;
+}
+
+.logo{
+   flex:1;
+   font-family: 'Modak', cursive;
+}
+
+
+.toggle{
+order:2;
+}
+
+}
+
+/* Desktop Menu*/
+
+@media all and (min-width: 768px){
+.item{
+display:block;
+width:auto;
+color:rgb(65, 62, 62);
+}
+
+.toggle{
+display:none;
+}
+
+.logo{
+  text-align: left;
+ order:0;
+}
+
+.item{
+order:1;
+}
+
+.button{
+order:2;
+}
+
+.menu li{
+padding:15px 10px;
+}
+
+.menu li.button{
+padding-right:0;
+}
+
+
+.trans{
+Animation: transitionIn;
+}
+
+
+}
+
+@keyframes transitionIn{
+From{
+  opacity: 0;
+Transform:roteX(-10deg);
+
+}
+
+To{
+
+  opacity: 1;
+Transform:roteX(0);
+
+}
+
+}
+
+@media (max-width: 600px) {
+}
